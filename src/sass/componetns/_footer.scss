@@ -1,0 +1,39 @@
+.footer {
+    background-color: $color-pink;
+}
+
+.social-link {
+    font-size: 14px;
+    line-height: 156.02%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgba(255, 214, 77, 0.7);
+}
+.logo {
+
+    .animatid-name {
+       
+        opacity: 0;
+    }
+
+    &:hover,
+    &:focus {
+        .animatid-name {
+        
+            opacity: 1;
+            font-size: 20px;
+            line-height: 156.02%;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+    }
+}
