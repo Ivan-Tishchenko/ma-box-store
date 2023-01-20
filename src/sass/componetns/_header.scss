@@ -1,0 +1,125 @@
+.header {
+  background-color: #FF7BBA;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
+  a,button {
+  
+      cursor: url(/src/images/cursor/vector.png), auto;
+    }
+}
+
+.logo{
+  color: $color-deep-black;
+}
+
+@media screen and (max-width: 768px) {
+
+body{
+  padding-top: 59px;
+}
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .mobile-contacts-modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    max-width: 450px;
+    min-width: 300px;
+    min-height: 450px;
+    max-height: 700px;
+    border: solid 3px #FF7BBA;
+    border-radius: 22px;
+    background-color: $color-deep-black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+
+    a,
+      button {
+    
+        cursor: url(/src/images/cursor/cursor.png), auto;
+      }
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-open-modal {
+    border: solid 1px $color-deep-black;
+    border-radius: 13px;
+    background-color: #FF7BBA;
+    &[data-contact-modal-open] {
+        display: none;
+      }
+  }
+  
+  .button-modal-close {
+    border: solid 1px $color-pink;
+    border-radius: 13px;
+    background-color: $color-deep-black;
+    fill: currentColor;
+    color: $color-pink;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    &[data-contact-modal-close] {
+      display: none;
+    }
+  }
+
+  .sites-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    padding-top: 3px;
+
+    li {
+      padding: 10px 20px;
+    }
+  }
+
+  .list-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+  }
+
+  .navigation-link {
+    padding: 10px 20px;
+    border: solid 0.5px $color-pink;
+    border-radius: 20px;
+  }
+
+  .top-contacts {
+    padding: 8px 10px;
+    .link {
+      padding: 8px 10px;
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}
