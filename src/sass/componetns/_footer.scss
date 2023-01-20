@@ -16,14 +16,12 @@
 .logo {
 
     .animatid-name {
-       
         opacity: 0;
     }
 
     &:hover,
     &:focus {
         .animatid-name {
-        
             opacity: 1;
             font-size: 20px;
             line-height: 156.02%;
