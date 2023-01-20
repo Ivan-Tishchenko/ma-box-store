@@ -1,5 +1,22 @@
 .footer {
     background-color: $color-pink;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    a,
+        button {
+    
+            cursor: url(/src/images/cursor/vector.png), auto;
+        }
+    
+    
 }
 
 .social-link {
@@ -12,26 +29,4 @@
     text-transform: uppercase;
 
     color: rgba(255, 214, 77, 0.7);
-}
-.logo {
-
-    .animatid-name {
-        opacity: 0;
-    }
-
-    &:hover,
-    &:focus {
-        .animatid-name {
-            opacity: 1;
-            font-size: 20px;
-            line-height: 156.02%;
-
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-transform: uppercase;
-
-            color: #FFFFFF;
-        }
-    }
 }

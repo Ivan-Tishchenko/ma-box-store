@@ -1,0 +1,77 @@
+.head-of-page {
+    font-family: 'IBM Plex Serif';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 156.02%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FF3E9A;
+
+    margin-bottom: 70px;
+}
+
+.product {
+    max-width: 370px;
+    height: 578px;
+    border: solid 1px $color-pink;
+    border: 1.5px solid #F5476B;
+    border-radius: 25px;
+
+    &:not(:last-child) {
+        margin-bottom: 75px;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__name {
+        margin-top: 22px;
+        font-family: 'Maven Pro';
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 156.02%;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: #FFED4D;
+    }
+
+    &__price {
+        font-family: 'Maven Pro';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 156.02%;
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+    
+        color: $color-pink;
+    }
+    &__galerry {
+        overflow: hidden;
+        height: 427px;
+        display: block;
+        border-radius: 25px 25px 0 0;
+    }
+}
+
+.popular__container {
+    padding-top: 71px;
+    padding-bottom: 186px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
