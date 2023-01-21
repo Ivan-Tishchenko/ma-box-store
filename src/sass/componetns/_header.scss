@@ -136,6 +136,10 @@ body{
 }
 
 @media screen and (min-width: $tablet) {
+body {
+  padding-top: 103px;
+}
+
   .button-open-modal {
 
     display: block;
@@ -144,7 +148,7 @@ body{
     max-height: 56px;
     padding: 10px 15px;
     border-radius: 30px;
-    margin-left: 25px;
+    margin-left: 18px;
 
     font-size: 15px;
     line-height: 156.02%;
@@ -216,12 +220,16 @@ body{
   .sites-navigation {
     display: flex;
     align-items: center;
-    // width: 460px;
+    width: 460px;
     justify-content: space-between;
 
+    li {
+      width: 12vw;
+    }
   }
   .navigation-link {
-    padding: 10px 15px;
+    padding: 10px 1px;
+    justify-content: center;
     border: solid 1px $color-deep-black;
     border-radius: 30px;
 
@@ -238,7 +246,7 @@ body{
   }
 
   .header-logo {
-    margin-right: 25px;
+    margin-right: 15px;
   }
 
   .list-contacts {
@@ -247,7 +255,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 50%;
-    margin: 15% 0;
+    margin: 13% 0;
     
   }
 }

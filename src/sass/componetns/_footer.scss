@@ -28,5 +28,11 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: rgba(255, 214, 77, 0.7);
+    color: #FFED4D;
+}
+
+@media screen and (min-width: $tablet) {
+      .footer__container {
+        align-items: flex-start;
+      }
 }
