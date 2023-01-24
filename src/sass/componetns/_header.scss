@@ -6,21 +6,53 @@
   left: 0;
   z-index: 10;
 
+  cursor: url(/src/images/cursor/vector.png), auto;
+
   a,button {
   
-      cursor: url(/src/images/cursor/vector.png), auto;
+      cursor: url(/src/images/cursor/cursor.png), auto;
+  }
+  .logo,button {
+      transform-origin: color, bacground-color;
+      transition-duration: 300ms;
+      transition-timing-function: $timing-function;
+  
+      fill: currentColor;
+  
+      &:hover,
+      &:focus {
+        color: $color-pink;
+        background-color: $color-deep-black;
+      }
+      
+    }
+
+    .button-modal-close {
+      transform-origin: color, bacground-color;
+      transition-duration: 300ms;
+      transition-timing-function: $timing-function;
+    
+      fill: currentColor;
+    
+      &:hover,
+      &:focus {
+        color: $color-deep-black;
+        background-color: $color-pink;
+
+      }
     }
 }
 
 .logo{
   color: $color-deep-black;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 768px) {
 
-body{
-  padding-top: 59px;
-}
+  body{
+    padding-top: 59px;
+  }
   
   .logo {
     width: 50px;
@@ -50,11 +82,12 @@ body{
     &.is-hidden {
       display: none;
     }
+    
+    cursor: url(/src/images/cursor/cursor.png), auto;
 
     a,
       button {
-    
-        cursor: url(/src/images/cursor/cursor.png), auto;
+        cursor: url(/src/images/cursor/vector.png), auto;
       }
   }
 
@@ -98,13 +131,24 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 140px;
   }
 
   .navigation-link {
     padding: 10px 20px;
     border: solid 0.5px $color-pink;
     border-radius: 20px;
+
+    transform-origin: color, bacground-color;
+    transition-duration: 300ms;
+    transition-timing-function: $timing-function;
+  
+    fill: currentColor;
+  
+    &:hover,
+    &:focus {
+      color: $color-pink;
+      background-color: $color-deep-black;
+    }
   }
 
   .top-contacts {
@@ -113,19 +157,26 @@ body{
       padding: 8px 10px;
     }
   }
+
+  .contacts-modal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 
 
 .button-open-modal {
   border: solid 1px $color-deep-black;
-    border-radius: 13px;
-    background-color: #FF7BBA;
+  border-radius: 13px;
+  background-color: #FF7BBA00;
 }
 
 .button-modal-close {
   border: solid 1px $color-pink;
   border-radius: 13px;
-  background-color: $color-deep-black;
+  background-color: #00000000;
   fill: currentColor;
   color: $color-pink;
 }
@@ -215,6 +266,12 @@ body {
       &.is-hidden {
         display: none;
       }
+
+        cursor: url(/src/images/cursor/cursor.png), auto;
+
+        a,button {
+          cursor: url(/src/images/cursor/vector.png), auto;
+        }
   }
 
   .sites-navigation {
@@ -243,6 +300,17 @@ body {
   
     color: $color-deep-black;
 
+    transform-origin: color, bacground-color;
+    transition-duration: 300ms;
+    transition-timing-function: $timing-function;
+  
+    fill: currentColor;
+  
+    &:hover,
+    &:focus {
+      color: $color-pink;
+      background-color: $color-deep-black;
+    }
   }
 
   .header-logo {
@@ -284,4 +352,61 @@ body {
   .navigation-link {
     font-size: 20px;
   }
+}
+
+.navigation-link {
+  @media screen and (max-width: 768px) {
+    transform-origin: color, bacground-color;
+    transition-duration: 300ms;
+    transition-timing-function: $timing-function;
+  
+  
+    &:hover,
+    &:focus {
+      color: $color-deep-black;
+      background-color: $color-pink;
+    }
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   transform-origin: color, bacground-color;
+  //   transition-duration: 300ms;
+  //   transition-timing-function: $timing-function;
+  
+  
+  //   &:hover,
+  //   &:focus {
+  //     color: $color-pink;
+  //     background-color: $color-deep-black;
+  //   }
+  // }
+}
+
+.contacts-link {
+
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform-origin: color, bacground-color;
+  transition-duration: 300ms;
+  transition-timing-function: $timing-function;
+
+
+  &:hover, &:focus {
+    color: $color-deep-black;
+    background-color: $color-pink;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 18px;
+    border-radius: 28px;
+    border: solid 1px $color-pink;
+  }
+}
+
+.icon-social, .icon-phone {
+  margin-right: 4px;
 }
