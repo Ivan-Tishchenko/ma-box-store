@@ -12,7 +12,7 @@
   
       cursor: url(/src/images/cursor/cursor.png), auto;
   }
-  .logo,button {
+  button {
       transform-origin: color, bacground-color;
       transition-duration: 300ms;
       transition-timing-function: $timing-function;
@@ -46,6 +46,18 @@
 .logo{
   color: $color-deep-black;
   border-radius: 100%;
+
+  transform-origin: color, bacground-color;
+  transition-duration: 300ms;
+  transition-timing-function: $timing-function;
+
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $color-pink;
+    background-color: $color-deep-black;
+  }
 }
 
 @media screen and (max-width: 768px) {

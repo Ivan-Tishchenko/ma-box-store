@@ -10,10 +10,12 @@
         padding-bottom: 30px;
     }
 
+    cursor: url(/src/images/cursor/vector.png), auto;
+
     a,
         button {
     
-            cursor: url(/src/images/cursor/vector.png), auto;
+            cursor: url(/src/images/cursor/cursor.png), auto;
         }
     
     
@@ -22,6 +24,8 @@
 .social-link {
     font-size: 14px;
     line-height: 156.02%;
+    padding: 10px;
+    border-radius: 20px;
 
     display: flex;
     align-items: center;
@@ -29,6 +33,17 @@
     text-transform: uppercase;
 
     color: #FFED4D;
+
+    transform-origin: bacground-color;
+    transition-duration: 300ms;
+    transition-timing-function: $timing-function;
+
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        background-color: $color-deep-black;
+    }
 }
 
 @media screen and (min-width: $tablet) {
