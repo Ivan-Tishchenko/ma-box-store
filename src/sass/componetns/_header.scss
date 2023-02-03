@@ -200,18 +200,15 @@
 
 @media screen and (min-width: $tablet) {
 body {
-  padding-top: 103px;
+  padding-top: 102px;
 }
 
   .button-open-modal {
 
     display: block;
     box-sizing: border-box;
-    max-width: 174px;
-    max-height: 56px;
-    padding: 10px 15px;
     border-radius: 30px;
-    margin-left: 18px;
+    margin-left: 65px;
 
     font-size: 15px;
     line-height: 156.02%;
@@ -219,7 +216,6 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    text-transform: uppercase;
     
     color: $color-deep-black;
 
@@ -356,9 +352,10 @@ body {
   }
 
   .button-open-modal { 
-    margin-left: 100px;
-    font-size: 20px;
-    padding: 13px 31px;
+    margin-left: 140px;
+    // margin-left: 100px;
+    // font-size: 20px;
+    // padding: 13px 31px;
   }
 
   .navigation-link {
@@ -394,7 +391,7 @@ body {
   // }
 }
 
-.contacts-link {
+.acaunt-pages, .contacts-link {
 
   padding: 10px;
   border-radius: 20px;
@@ -419,6 +416,25 @@ body {
   }
 }
 
-.icon-social, .icon-phone {
+.icon-soshial, .icon-phone {
+  margin-right: 4px;
+}
+
+.accaunt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.acaunt-pages {
+  fill: currentColor;
+  &:last-child {
+    margin-top: 9px;
+  }
+}
+
+.icon-bascket, .icon-accaunt {
+  fill: currentColor;
   margin-right: 4px;
 }
